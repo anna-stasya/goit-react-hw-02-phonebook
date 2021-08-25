@@ -27,7 +27,7 @@ class App extends Component {
   forSubmitHandler = text => {
     const { contacts } = this.state;
     //генерация id
-    const ContactsNew = {
+    const сontactsNew = {
       id: shortid.generate(),
       ...text,
     };
@@ -40,7 +40,7 @@ class App extends Component {
     }
     // добавляем новый контакт
     this.setState(({ contacts }) => ({
-      contacts: [ContactsNew, ...contacts],
+      contacts: [сontactsNew, ...contacts],
     }));
   };
 
